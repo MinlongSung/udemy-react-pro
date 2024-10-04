@@ -1,12 +1,11 @@
 import { createContext } from 'react';
 
-import { 
-    ProductContextProps, 
-    ProductCardProps, 
-    // ProductImage, 
-    // ProductTitle, 
-    useProduct, 
-    // ProductButtons
+import styles from '../styles/styles.module.css';
+
+import {
+    ProductContextProps,
+    ProductCardProps,
+    useProduct,
 } from '../';
 
 export const ProductContext = createContext({} as ProductContextProps);
@@ -21,11 +20,9 @@ export const ProductCard = ({ product, children }: ProductCardProps) => {
             increaseBy,
             product,
         }}>
-            {children}
+            <div className={styles.productCard}>
+                {children}
+            </div>
         </Provider>
     )
 }
-
-// ProductCard.Title = ProductTitle;
-// ProductCard.Image = ProductImage;
-// ProductCard.Buttons = ProductButtons;
