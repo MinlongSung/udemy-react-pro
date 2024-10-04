@@ -1,4 +1,4 @@
-import { Suspense } from "react"
+import { Suspense } from "react";
 import { BrowserRouter, Routes, Route, NavLink, Navigate } from "react-router-dom"
 
 import reactLogo from '../logo.svg'
