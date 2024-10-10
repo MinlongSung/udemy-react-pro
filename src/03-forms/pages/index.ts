@@ -1,5 +1,7 @@
+export * from "./dynamic-form";
 export * from "./formik-abstractation";
 export * from "./formik-basic-page";
 export * from "./formik-components";
 export * from "./formik-yup-page";
+export * from "./register-formik-page";
 export * from "./register-page";
